@@ -1,0 +1,222 @@
+% This is annote.bib
+% Author: Jiaming (Vera) Mao
+% The order of the following entries is irrelevant. They will be sorted according to the
+% bibliography style used.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The following is a conference paper
+
+@article{Leubner2017,
+  author = {Leubner, Daniel and Hinterberger, Thilo},
+  title = {Reviewing the Effectiveness of Music Interventions in Treating Depression},
+  journal = {Frontiers in Psychology},
+  volume = {8},
+  number = {1109},
+  year = {2017},
+  doi = {10.3389/fpsyg.2017.01109},
+  url = {https://doi.org/10.3389/fpsyg.2017.01109},
+  annote = {This systematic review evaluates 28 original studies involving music-based interventions—either music therapy (MT) or music medicine (MM) that used to alleviate symptoms of depression. The review distinguishes between active engagement (e.g., drumming, singing) and passive listening, and introduces the "Depression Score Improvement" (DSI) metric to quantify effectiveness across diverse methodologies. Results indicate significant reductions in depressive symptoms in 26 of the 28 studies, particularly in elderly populations and group-based interventions. Notably, genres such as classical, jazz, and percussion-based music yielded above-average improvements. The review’s findings offer strong support for the relevance of acoustic features—such as tempo, rhythm, and instrumentation—in shaping emotional outcomes, which directly relates to this project's investigation of musical features in machine learning classification of emotional categories. Also, the article’s attention to cultural and individual variability in emotional response to music reinforces the need to account for such variability in feature selection and model interpretation. While methodologically rigorous, the review does not address machine learning or computational feature importance, limiting its technical applicability but enhancing its theoretical value.}
+}
+
+@article{Huron2015,
+  author = {Huron, David},
+  title = {Affect Induction Through Musical Sounds: An Ethological Perspective},
+  journal = {Philosophical Transactions of the Royal Society B: Biological Sciences},
+  volume = {370},
+  number = {1664},
+  pages = {20140098},
+  year = {2015},
+  doi = {10.1098/rstb.2014.0098},
+  url = {https://royalsocietypublishing.org/doi/abs/10.1098/rstb.2014.0098},
+  annote = {This article develops a framework for understanding how musical sounds evoke affective responses, drawing on ethological principles. Huron distinguishes between various mechanisms of emotion induction: signals, cues, indices, mirror processes, and learned associations. Ethological signals—multimodal, biologically evolved behaviors—are emphasized as particularly effective means for inducing emotion across cultures due to their stereotypic nature. The article explains how acoustic features like pitch, nasality, tempo, vibrato, and formant dispersion correlate with perceptions of threat, vulnerability, or empathy, and how these associations are evolutionarily grounded in biological systems shared across species. His argument that low pitch correlates with aggression while high pitch suggests submission or vulnerability directly supports the use of pitch-related features in emotion classification models. Similarly, his distinction between sadness as a low-arousal cue and grief as a high-arousal signal clarifies why some emotional states may be harder to detect using purely acoustic features. While the article does not engage with machine learning or empirical classification, it serves as an essential conceptual foundation for feature interpretation and emotional ground-truthing in computational studies.}
+}
+
+@inproceedings{Helmholz2019,
+  author = {Helmholz, Patrick and Meyer, Michael and Robra-Bissantz, Susanne},
+  title = {Feel the Moosic: Emotion-based Music Selection and Recommendation},
+  booktitle = {Bled eConference Proceedings},
+  year = {2019},
+  doi = {10.18690/978-961-286-280-0.11},
+  url = {https://doi.org/10.18690/978-961-286-280-0.11},
+  annote = {This article introduces "Moosic," an emotion-based recommendation prototype that employs user-selected emotional states for music retrieval. It justifies the selection of emotional models by comparing Russell's circumplex model and Thayer's arousal-valence framework, noting these two-dimensional models as widely accepted standards for representing emotions due to their intuitive simplicity and comprehensive emotional coverage. The authors chose valence and arousal as primary dimensions because of their broad applicability in emotional categorization, ease of use for end-users in interface interaction, and proven effectiveness in psychological and affective computing literature. In terms of methodology, Moosic leverages Spotify's API to retrieve tracks matching the user's emotional input (given via a graphical interface based on valence and arousal coordinates). A user study compared Russell and Thayer's models, finding no statistically significant performance differences, suggesting both models effectively capture users' subjective emotional experiences with music. This work is particularly relevant as it validates the theoretical rationale behind adopting the valence-arousal model for computational classification, suggesting the implications and usability considerations when integrating emotional models into music recommender systems. However, the absence of advanced machine learning or feature-level analyses marks a gap that can be addressed by integrating more sophisticated modeling approaches to further improve accuracy and emotional granularity in classification systems.}
+}
+
+
+@article{McCraty1998,
+  author = {McCraty, Rollin and Barrios-Choplin, B. and Atkinson, M. and Tomasino, Dana},
+  title = {The Effects of Different Types of Music on Mood, Tension, and Mental Clarity},
+  journal = {Alternative Therapies in Health and Medicine},
+  volume = {4},
+  number = {1},
+  pages = {75--84},
+  month = feb,
+  year = {1998},
+  annote = {This article investigates the psychological and physiological effects of different musical genres on listeners' mood, perceived tension, and mental clarity. The study compares grunge rock, designer music (i.e., music created with the intention of inducing positive states), New Age, classical, and participants' preferred music. Using self-report measures and physiological indicators, the study finds that grunge rock significantly increases feelings of hostility, fatigue, sadness, and tension, while designer music improves mental clarity, vigor, and relaxation. These findings support the view that specific musical elements—such as tempo, harmonic structure, and tonal quality—can trigger distinct affective responses. This study is theoretically aligned with the current project’s emphasis on musical features and emotional valence. Although no machine learning methods are employed, the experimental design highlights how genre and structural musical components modulate emotional states. It also supports the classification of music by affective category, providing rationale for using genre and mood tags, or acoustic proxies such as valence and arousal, in computational emotion recognition systems.}
+}
+
+@article{Yang2024,
+  author = {Yang, Mengxi},
+  title = {Comparison and Analysis of Prediction Accuracy Between Traditional Machine Learning Algorithms and XGBoost Algorithm in Music Emotion Classification},
+  journal = {Applied and Computational Engineering},
+  volume = {57},
+  pages = {98--103},
+  month = apr,
+  year = {2024},
+  doi = {10.54254/2755-2721/57/20241316},
+  url = {https://doi.org/10.54254/2755-2721/57/20241316},
+  annote = {This study compares the classification performance of traditional Random Forest algorithms with the XGBoost model using the Turkish Music Sentiment Dataset. The dataset includes audio clips labeled with emotional states—happiness, sadness, calmness, anger, and fear—and supports machine learning-based emotion classification research. After preprocessing and feature reduction using correlation analysis, the author evaluates both models on accuracy, precision, recall, and F1-score. Random Forest outperforms XGBoost on all key metrics for the test set: 80.8% accuracy versus 75%, and 80.5% F1-score versus 75.3%. However, XGBoost is acknowledged for its speed, generalization capabilities, and robustness in large-scale data contexts. Both models are implemented in Python using scikit-learn and XGBoost libraries, respectively. The findings suggest that while XGBoost has architectural advantages, Random Forest offers greater interpretability and noise tolerance for this particular dataset. This article is directly relevant to the current project’s comparative model evaluation and contributes empirical insight into the trade-offs between tree-based ensemble methods in music emotion classification tasks.}
+}
+
+@article{Li2023,
+  author = {Li, Zenan},
+  title = {Emotion Recognition of Music Based on Machine Learning Scenarios},
+  journal = {Highlights in Science, Engineering and Technology},
+  volume = {39},
+  pages = {144--150},
+  month = apr,
+  year = {2023},
+  doi = {10.54097/hset.v39i.6515},
+  url = {https://doi.org/10.54097/hset.v39i.6515},
+  annote = {This article surveys current machine learning models and features used in music emotion recognition, with particular attention to the complexity of emotional representation in music. It reviews approaches including CNN-based spectrogram models, EEG-based emotion tracking with MLP and SVM classifiers, and general audio-visual models such as IADS. Features discussed include both standard and melodic audio descriptors, such as RMS, MFCCs, spectral contrast, pitch range, and tempo, as well as lyric-based features like bag-of-words and affective lexicons. Li emphasizes the limitations of current classification and feature extraction methods when applied to experimental or non-traditional music genres, citing issues with asymmetry, sampling, and emotional ambiguity. The article also outlines evaluation metrics like entropy-based scores and classifier comparison methods (e.g., SVM vs. CNN) to validate model performance. While the work does not introduce new models, it consolidates existing techniques and their respective trade-offs, offering a high-level conceptual framework relevant for refining and evaluating emotion recognition systems. This is particularly useful for identifying potential challenges when applying machine learning to diverse musical inputs.}
+}
+
+@article{Xia2022,
+  author = {Xia, Yu and Xu, Fumei},
+  title = {Study on Music Emotion Recognition Based on the Machine Learning Model Clustering Algorithm},
+  journal = {Mathematical Problems in Engineering},
+  volume = {2022},
+  number = {1},
+  pages = {9256586},
+  year = {2022},
+  doi = {https://doi.org/10.1155/2022/9256586},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1155/2022/9256586},
+  annote = {This paper proposes a machine learning framework for music emotion recognition, employing Thayer’s two-dimensional valence-arousal emotional model. It converts emotion classification into a regression problem, mapping musical excerpts to continuous values on the emotional plane. Three regression algorithms—polynomial regression, support vector regression (SVR), and k-plane piecewise regression—are used to predict valence and arousal values based on extracted audio features such as rhythm, harmony, frequency, and spectral characteristics (e.g., MFCCs). The authors introduce a "Hybrid Classifier," combining several traditional classification algorithms (SVM, KNN, fuzzy neural networks, Bayesian classifiers, Fisher discriminant analysis) through median voting, achieving an emotion recognition accuracy of approximately 84.9%. Experimental results show regression-based methods outperform traditional classification, improving accuracy by about 6%. This study aligns directly with the current project since it presents feature extraction techniques and regression-based modeling, demonstrating the strengths of combining algorithms for improved accuracy in music emotion classification.}
+}
+
+@article{Xu2021,
+  author = {Xu, Liang and Sun, Zaoyi and Wen, Xin and Huang, Zhengxi and Chao, Chi-ju and Xu, Liuchang},
+  title = {Using machine learning analysis to interpret the relationship between music emotion and lyric features},
+  journal = {PeerJ Computer Science},
+  volume = {7},
+  pages = {e785},
+  month = nov,
+  year = {2021},
+  doi = {10.7717/peerj-cs.785},
+  url = {https://doi.org/10.7717/peerj-cs.785},
+  annote = {This article explores the relationship between perceived emotional content in music and lyric features using machine learning methods. The authors employ Linguistic Inquiry and Word Count (LIWC) analysis on 2,372 Chinese songs, extracting linguistic features from lyrics alongside acoustic features from the corresponding audio signals. Using Random Forest regression, the study demonstrates that lyric features significantly improve the predictive accuracy for perceived valence but not for arousal. Specifically, lyrics' negative emotion words (e.g., sadness) significantly correlate with perceived negative valence, while structural features like word count show correlations with perceived arousal. The research highlights the relative importance of audio features for emotion prediction but provides robust evidence that lyrical content significantly enhances emotion recognition models, especially in predicting emotional valence. This study contributes methodologically by demonstrating the effectiveness and interpretability of linguistic features in music emotion recognition systems.}
+}
+
+
+@inproceedings{Juthi2020,
+  author = {Juthi, Jannatul Humayra and Gomes, Anthony and Bhuiyan, Touhid and Mahmud, Imran},
+  title = {Music Emotion Recognition with the Extraction of Audio Features Using Machine Learning Approaches},
+  booktitle = {Proceedings of ICETIT 2019},
+  publisher = {Springer International Publishing},
+  address = {Cham},
+  pages = {318--329},
+  year = {2020},
+  doi = {10.1007/978-3-030-30577-2-27},
+  url = {https://doi.org/10.1007/978-3-030-30577-2-27},
+  annote = {This paper develops a machine learning-based framework for music emotion recognition using Russell’s two-dimensional emotion model (valence and arousal). The authors extract audio features such as pitch, tempo, MFCC, key, mode, brightness, roll-off, and energy from 100 songs using MATLAB's MIR Toolbox. Features are mapped into four emotion categories (high positive, high negative, low positive, low negative) based on Russell’s circumplex model and social tags from Last.fm. Multiple classifiers, including Artificial Neural Networks (ANN), Support Vector Machines (SVM), Linear Discriminant, and Ensemble learners are evaluated. ANN achieves the highest accuracy at 75%. Feature importance analysis using Random Forest highlights spectral roll-off as particularly predictive, beyond traditionally used features. This study directly aligns with the current project, highlighting effective audio feature extraction methods and classifier comparisons, and provides empirical support for the utility of spectral features such as roll-off in predicting emotional responses to music.}
+}
+
+
+@inproceedings{Joseph2019,
+  author = {Joseph, Charles and Lekamge, Sugeeswari},
+  title = {Machine Learning Approaches for Emotion Classification of Music: A Systematic Literature Review},
+  booktitle = {2019 International Conference on Advancements in Computing (ICAC)},
+  pages = {334--339},
+  year = {2019},
+  doi = {10.1109/ICAC49085.2019.9103378},
+  url = {https://doi.org/10.1109/ICAC49085.2019.9103378},
+  annote = {This systematic literature review synthesizes findings from 14 selected studies on machine learning methods for music emotion classification published between 2006 and 2018. The review identifies frequently used acoustic features (pitch, intensity, timbre, tempo, rhythm, melody, and harmony), popular datasets (Western, Chinese, Japanese music, and Malay vocal/instrumental music), and standard classifiers (Support Vector Machines, Naïve Bayes, k-Nearest Neighbors, and Neural Networks). The study emphasizes common feature extraction tools like MIRToolbox, Marsyas, and PsySound. Notably, it compares classifier performance across studies, highlighting discrepancies caused by variations in datasets, listener populations, and features considered. Limitations such as dataset size, subjective emotional labeling, and limited cultural scope are critically discussed. The paper's broad overview effectively captures the state-of-the-art and identifies gaps that the current project directly addresses, such as improving emotion classification accuracy and integrating diverse musical features in computational models.}
+}
+
+@article{Yoo2024,
+  author = {Yoo, Gilsang and Hong, Sungdae and Kim, Hyeocheol},
+  title = {Emotion Recognition and Multi-class Classification in Music with MFCC and Machine Learning},
+  journal = {International Journal on Advanced Science, Engineering and Information Technology},
+  volume = {14},
+  number = {3},
+  pages = {818--825},
+  month = jun,
+  year = {2024},
+  doi = {10.18517/ijaseit.14.3.18671},
+  url = {https://ijaseit.insightsociety.org/index.php/ijaseit/article/view/18671},
+  annote = {This paper introduces an emotion recognition system designed to convert the emotional context of background music in OTT (over-the-top) video services into textual subtitles, especially aiming at enhancing accessibility for hearing-impaired audiences. The authors use audio features such as Mel Frequency Cepstral Coefficients (MFCC), Root Mean Square (RMS), and Mel Spectrograms for mood detection. Machine learning classifiers compared include Logistic Regression, Random Forest, Support Vector Classification (SVC), and AdaBoost, with Random Forest achieving the highest classification accuracy at 94.8%. The dataset comprises 2500 audio segments categorized into five emotional states: aggressive, dramatic, happy, romantic, and sad. They selected five emotional categories—Aggressive, Dramatic, Happy, Romantic, and Sad—based on typical emotions commonly represented in background music for video and OTT platforms, aiming to comprehensively capture the emotional nuances relevant to storytelling and viewer engagement. These categories are widely recognized in multimedia content, reflecting distinct emotional states that help convey narrative contexts and mood effectively. The results indicate that spectral features extracted through MFCC and Mel Spectrograms effectively capture emotional nuances, making these features highly relevant for computational emotion analysis in music. This study contributes to current research by showing the practical utility and performance of ensemble learning algorithms, specifically Random Forest, in music emotion classification.}
+}
+
+@article{Perlovsky2010,
+  author = {Perlovsky, Leonid},
+  title = {Musical Emotions: Functions, Origins, Evolution},
+  journal = {Physics of Life Reviews},
+  volume = {7},
+  number = {1},
+  pages = {2--27},
+  year = {2010},
+  doi = {https://doi.org/10.1016/j.plrev.2009.11.001},
+  url = {https://www.sciencedirect.com/science/article/pii/S1571064509000438},
+  annote = {Perlovsky provides a comprehensive review of theories surrounding the origin, evolutionary purpose, and psychological mechanisms underlying musical emotions. He proposes a hypothesis rooted in cognitive science, suggesting music evolved in parallel with language to balance differentiation (detailed cognitive understanding through language) and synthesis (emotional and cultural unity through music). The article argues that music originated from proto-human vocalizations, splitting into language for semantic clarity and music for emotional richness. This dual development allowed for complex culture and consciousness by addressing cognitive dissonance and maintaining emotional coherence within social groups. Notably, Perlovsky's hypothesis explains the selection of emotional categories in music by linking them directly to fundamental psychological needs, such as emotional balance, social cohesion, and cultural identity. His differentiation of musical emotion as distinct from basic biological emotions provides a theoretical rationale for choosing specific emotional categories in computational models, particularly those that reflect complex, culturally significant emotional states. This review is essential for grounding the theoretical basis of musical emotion classification in machine learning, emphasizing why certain emotional categories might be universally recognizable and important in computational analyses.}
+}
+
+@article{Rosner2018,
+  author = {Rosner, Aldona and Kostek, Bozena},
+  title = {Automatic Music Genre Classification Based on Musical Instrument Track Separation},
+  journal = {Journal of Intelligent Information Systems},
+  volume = {50},
+  number = {2},
+  pages = {363--384},
+  month = apr,
+  year = {2018},
+  doi = {10.1007/s10844-017-0464-5},
+  url = {http://link.springer.com/10.1007/s10844-017-0464-5},
+  annote = {This paper explores automatic music genre classification through musical instrument track separation, highlighting the critical role of instrumentation in genre recognition tasks. The authors select genre categories (classical, jazz, rock, pop, blues, and country) due to their distinct instrumental characteristics and widespread recognition, facilitating clear differentiation based on instrument timbre. The methodology involves separating audio tracks into instrumental components using Non-negative Matrix Factorization (NMF) and then classifying music genres using traditional machine learning algorithms including k-Nearest Neighbors (kNN), Support Vector Machines (SVM), and Random Forest (RF). Results indicate that genre classification accuracy improves substantially when leveraging separated instrumental tracks compared to classification performed on mixed audio signals. This study aligns to the current project since its emphasis on instrument timbre and separation techniques, validating timbral features (such as MFCCs, spectral centroid, roll-off, and zero-crossing rate) as highly effective in genre-based and potentially emotion-based classification tasks. The authors provide justification for selecting genre categories based on instrumental diversity, directly aligning with theoretical considerations about how timbre contributes to emotional perception in music. The paper demonstrates a methodological advancement through NMF-based track separation, a potentially valuable approach for enhancing the granularity and accuracy of emotion recognition models relying on instrumentation and timbral analysis.}
+}
+
+@article{Garg2022,
+  author = {Garg, Anupam and Chaturvedi, Vybhav and Kaur, Arman Beer and Varshney, Vedansh and Parashar, Anshu},
+  title = {Machine Learning Model for Mapping of Music Mood and Human Emotion Based on Physiological Signals},
+  journal = {Multimedia Tools and Applications},
+  volume = {81},
+  number = {4},
+  pages = {5137--5177},
+  month = feb,
+  year = {2022},
+  doi = {10.1007/s11042-021-11650-0},
+  url = {https://link.springer.com/10.1007/s11042-021-11650-0},
+  annote = {This research develops a comprehensive machine learning framework integrating physiological signals—EEG, ECG, EMG, and galvanic skin response (GSR)—for real-time mapping of music-induced moods and corresponding human emotions. Emotion classification utilizes Russell’s circumplex model, selecting specific emotions (anger, joy, sadness, anticipation, disgust, trust, fear, and surprise) based on their physiological distinctiveness, EEG wave signatures, and clinical relevance to mental health. Musical mood classification employs audio features like MFCC, spectral centroid, spectral roll-off, and RMS energy extracted using libraries like PyAudioAnalysis and Librosa. Classification and regression techniques explored include SVM, Random Forest, AdaBoost, k-NN, and neural networks. The authors explicitly justify their emotional categories by linking each category to distinctive physiological signatures observed in EEG and ECG signals, grounding the emotional taxonomy in neurophysiological responses rather than subjective annotations. The integration of physiological signals for mood classification presents a novel methodological contribution by demonstrating enhanced accuracy and real-time adaptability. This approach is valuable for therapeutic applications in music therapy and personalized mental health interventions. The research also outlines detailed data preprocessing techniques (e.g., Hamming window smoothing and Adam optimization) to ensure accurate feature extraction. This detailed physiological-emotional framework significantly advances the methodological rigor for computational models aiming at emotion classification in music contexts.}
+}
+
+@inproceedings{Chauhan2024,
+  author = {Chauhan, Rahul and Vashisht, Anshul and Negi, Abhishek and Devliyal, Swati},
+  title = {Real Time Mood Detection on Music Streaming Platforms: A Deep Learning Perspective},
+  booktitle = {2024 4th Asian Conference on Innovation in Technology (ASIANCON)},
+  pages = {1--6},
+  year = {2024},
+  month = aug,
+  publisher = {IEEE},
+  address = {Pimari Chinchwad, India},
+  doi = {10.1109/ASIANCON62057.2024.10837722},
+  url = {https://ieeexplore.ieee.org/document/10837722/},
+  annote = {This paper proposes a real-time emotion detection system using deep learning methods applied to music streaming platforms. The emotional categorization used in the model—happy, angry, neutral, sad, surprised, fearful, and disgusted—is justified based on their clear facial expression signals and widespread recognition in the Facial Expression Recognition (FER) literature. Two CNN architectures (a five-layer model and a Global Average Pooling model) are presented, emphasizing real-time responsiveness suitable for live streaming scenarios. Facial emotions detected via webcam input trigger music recommendations that match the user's emotional state, leveraging Spotify-like real-time playlist generation algorithms. Chauhan et al. validate their approach using datasets such as FER2013 and MMA Facial Expression Recognition, achieving approximately 75% classification accuracy after training with MobileNet and Keras frameworks. The research highlights the practical integration of facial emotion recognition into interactive systems, providing a novel application of visual emotion detection for mood-based music recommendation. Methodological innovations include tackling dataset imbalance through class weighting and optimizing deep neural networks to ensure real-time application feasibility. The comprehensive integration of facial cues and emotional mapping with music streaming represents a significant methodological advancement relevant for systems aiming at personalized, emotion-aware user experiences.}
+}
+
+@article{bandhakavi_lexicon_2017,
+	title = {Lexicon {Generation} for {Emotion} {Detection} from {Text}},
+	volume = {32},
+	issn = {1941-1294},
+	url = {https://ieeexplore.ieee.org/abstract/document/7851145?casa_token=BP2dXjPKQEMAAAAA:WQKU9husdL6_1NViXxmikxT2WNKZjLOUuIwpCERQyoEBOYrjinE9JdqY_uMh3vNO7WNOHdsIVf0},
+	doi = {10.1109/MIS.2017.22},
+	number = {1},
+	urldate = {2025-04-06},
+	journal = {IEEE Intelligent Systems},
+	author = {Bandhakavi, Anil and Wiratunga, Nirmalie and Massie, Stewart and Padmanabhan, Deepak},
+	month = jan,
+	year = {2017},
+	note = {Conference Name: IEEE Intelligent Systems},
+	keywords = {Emotion recognition, Intelligent systems, Mathematical model, Mixture models, Sentiment analysis, Social network services, Vocabulary, domain-specific lexicon, emotion detection, emotion ranking, intelligent systems, mixture model, word classification},
+	pages = {102--108},
+        annote = {This article addresses the critical issue of generating domain-specific emotion lexicons (DSELs) to improve the accuracy of emotion detection from textual data. The authors propose a unigram mixture model (UMM), capable of distinguishing emotional words from neutral ones within a given corpus. The approach emphasizes capturing subtle emotional nuances and variations in vocabulary across different domains, particularly relevant to dynamic, informal domains like social media. The evaluation demonstrates that domain-specific lexicons significantly outperform general-purpose lexicons in predicting emotions from text.
+
+The work is particularly useful for my research because it highlights methods to systematically create emotion lexicons using machine learning, crucial for classifying song emotions based on lyrics. Its methodological rigor—using perplexity analysis and document-emotion ranking metrics—provides a robust framework for evaluating lexicon quality. Additionally, this paper directly addresses peer suggestions to employ lexicons for improved emotional labeling accuracy, emphasizing that emotional specificity and domain adaptation substantially enhance classification results.}
+}
